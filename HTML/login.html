@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página de Login</title>
+        <link rel="stylesheet" href="/CSS/login.css">
+        <script src="/JAVASCRIPT/login.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    </head>
+    <body>
+        <div class="login-container">
+            <h1>LOGIN</h1>
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Usuário" required>
+                <div class="input-group">
+                    <input type="password" id="input-password" placeholder="Senha" required>
+                    <button type="button" id="toggle-password">
+                        <image type="image" src="../image/eye.svg" alt="" width="20" height="20">
+                    </button>
+                </div>
+                <button type="button" id="generate-password">GERAR SENHA</button>
+                <div class="captcha-container">
+                    <div id="captcha" class="captcha-image"></div>
+                    <button type="button" onclick="generateCaptcha()">GERAR CAPTCHA</button>
+                </div>
+                <label for="captcha-input">ENTER CAPTCHA:</label>
+                <input type="text" id="captcha-input" name="captcha-input" required>
+                <button type="submit">ENTRAR</button>
+            </form>
+        </div>
+    </body>
+</html>
+
+
+
