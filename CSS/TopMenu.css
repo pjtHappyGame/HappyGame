@@ -1,0 +1,36 @@
+  
+nav{
+    background-color: #011b35;
+}
+
+.div-agroup{
+    width: 100%;
+    display: flex;
+    align-items: center; 
+}
+
+.div-img-logo{
+    padding-left: 2%;
+    width: 35%;
+}
+
+.div-img-logo img{
+    width: 30%;
+}
+
+.div-text{
+    gap: 60px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.div-text a{
+    color: #FFF;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.div-text a:hover {
+    color: #FFD700;
+}
