@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault(); // Remove this line when integrating with backend authentication
             console.log(`Usuário: ${username}, Senha: ${password}`);
             alert(`Logado com Sucesso, Seja Bem vindo ${username}`);
-            document.getElementById('login-form').submit();
+            window.location.href='../HTML/HOME.html'
 
         }
     });
